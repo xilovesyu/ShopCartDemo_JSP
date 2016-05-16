@@ -6,4 +6,14 @@
     <welcome-file-list>
         <welcome-file>userLogin.jsp</welcome-file>
     </welcome-file-list>
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>filter.AuthenFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/listOrderItem.jsp</url-pattern>
+        <url-pattern>/productlist</url-pattern>
+        <url-pattern>/listProduct.jsp</url-pattern>
+    </filter-mapping>
 </web-app>
